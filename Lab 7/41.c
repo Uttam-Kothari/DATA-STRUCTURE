@@ -5,7 +5,7 @@
 
 struct Node
 {
-    int data;
+    int info;
     struct Node *link;
 };
 
@@ -15,12 +15,12 @@ void main()
 
     newNode = (struct Node *)malloc(sizeof(struct Node));
 
-    printf("Enter data: ");
-    scanf("%d", &newNode->data);
+    printf("Enter info: ");
+    scanf("%d", &newNode->info);
 
     newNode->link = NULL;
 
-    printf("Node Data = %d\n", newNode->data);
+    printf("Node Data = %d\n", newNode->info);
 
     free(newNode);
 }
